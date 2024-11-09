@@ -1,11 +1,13 @@
 package com.easyTickets.user_service.userControllers;
 
-import com.easyTickets.user_service.userModel.UserDetails;
 import com.easyTickets.user_service.userModel.UserLogin;
 import com.easyTickets.user_service.userSigninService.SignInService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 @RestController

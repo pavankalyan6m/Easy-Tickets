@@ -3,8 +3,8 @@ package com.easyTickets.user_service.userSignupService;
 import com.easyTickets.user_service.userModel.UserDetails;
 import com.easyTickets.user_service.userRepository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service

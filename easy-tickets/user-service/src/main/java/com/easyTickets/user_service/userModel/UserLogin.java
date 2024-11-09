@@ -1,7 +1,5 @@
 package com.easyTickets.user_service.userModel;
 
-import jakarta.persistence.Entity;
-
 public class UserLogin {
     private String username;
     private String password;
