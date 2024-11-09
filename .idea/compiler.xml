@@ -9,6 +9,7 @@
         </processorPath>
         <module name="easy-tickets.user-service.main" />
         <module name="easy-tickets.easy-tickets.main" />
+        <module name="easy-tickets.event-service.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

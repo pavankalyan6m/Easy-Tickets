@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users_details")
-public class UserDetails{
+public class UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,7 +20,10 @@ public class UserDetails{
 
     private String role; // For simplicity, we store roles as a string. We can later normalize this in a separate table.
 
-    //Getters & Setters
+    @Column(nullable = false)
+    private String phoneNumber; // Added phone number field
+
+    // Getters & Setters
 
     public Long getId() {
         return id;
@@ -58,8 +61,15 @@ public class UserDetails{
         return role;
     }
 
-    public void setRole(String roles) {
-        this.role = roles;
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
-

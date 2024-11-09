@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/easy-tickets" />
             <option value="$PROJECT_DIR$/easy-tickets/easy-tickets" />
             <option value="$PROJECT_DIR$/easy-tickets/eureka-server" />
+            <option value="$PROJECT_DIR$/easy-tickets/event-service" />
             <option value="$PROJECT_DIR$/easy-tickets/user-service" />
           </set>
         </option>
