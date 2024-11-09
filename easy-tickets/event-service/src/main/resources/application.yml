@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: event-service  # Name of the service in Eureka registry
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/easy_tickets_events  # MongoDB URL with database name
+      database: easy_tickets_events
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+  # Eureka client settings
+  cloud:
+    discovery:
+      enabled: true
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://localhost:8761/eureka/  # URL of your Eureka server
+        register-with-eureka: true  # Register with Eureka server
+        fetch-registry: true  # Fetch the service registry from Eureka
+      instance:
+        hostname: localhost  # Hostname of the instance
+        prefer-ip-address: true  # Prefer IP address in the Eureka registration
+
+logging:
+  level:
+    org.springframework.web: DEBUG  # Enable DEBUG logging for web requests
+    org.springframework.security: DEBUG  # Enable DEBUG logging for security
+
+server:
+  port: 8082  # Port for the Event microservice (ensure it's not conflicting with others)
